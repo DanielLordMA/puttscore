@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Golf Score Card</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <h1>Mini Golf Score Card</h1>
+
+    <!-- Form to input course name, number of holes, and player names -->
+    <form>
+        <label for="courseName">Course Name:</label>
+        <input type="text" id="courseName" name="courseName"><br>
+
+        <label for="numHoles">Number of Holes:</label>
+        <input type="number" id="numHoles" name="numHoles" min="1"><br>
+
+        <label for="player1">Player 1 Name:</label>
+        <input type="text" id="player1" name="player1"><br>
+
+        <label for="player2">Player 2 Name:</label>
+        <input type="text" id="player2" name="player2"><br>
+
+        <label for="player3">Player 3 Name:</label>
+        <input type="text" id="player3" name="player3"><br>
+
+        <label for="player3">Player 4 Name:</label>
+        <input type="text" id="player4" name="player4"><br>
+
+        <input type="submit" value="Start Game">
+    </form>
+
+    <!-- Table to display the score card -->
+    <table id="scoreCard">
+        <thead>
+            <tr>
+                <th>Hole</th>
+                <th>Par</th>
+                <th>Player 1</th>
+                <th>Player 2</th>
+                <th>Player 3</th>
+                <th>Player 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows for each hole will be dynamically generated using JavaScript -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td id="player1Total"></td>
+                <td id="player2Total"></td>
+                <td id="player3Total"></td>
+                <td id="player4Total"></td>
+            </tr>
+            <tr>
+                <td colspan="5" id="winner"></td>
+            </tr>
+        </tfoot>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+    <!-- JavaScript code to implement the score card functionality -->
+    <script src="scoreCard.js"></script>
+</body>
+</html>

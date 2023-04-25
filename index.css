@@ -1,0 +1,87 @@
+/* Define the font family and size */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Center the form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style the input fields */
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 16px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+/* Style the table */
+table {
+    border-collapse: collapse;
+    margin-top: 24px;
+    width: 100%;
+    max-width: 600px;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+thead th {
+    position: sticky;
+    top: 0px;
+}
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style the total scores */
+tfoot td {
+    font-weight: bold;
+}
+
+#player1Total, #player2Total, #player3Total, #player4Total {
+    text-align: center;
+}
+
+/* Hide the winner row by default */
+tfoot tr:last-child {
+    display: none;
+}
+
+/* Show the winner row when the winner is calculated */
+#winner {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 16px;
+    color: #4CAF50;
+}
